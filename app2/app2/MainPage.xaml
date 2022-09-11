@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app2.MainPage" Title="Задание №1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition Height="90" />
+            <RowDefinition Height="90" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="90" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Entry Grid.Column="0" Grid.Row="0" Margin="5,0,0,20" Placeholder="x1" x:Name="x1Text" FontSize="20" MaxLength="10" TextChanged="Text_TextChanged" Keyboard="Telephone"></Entry>
+        <Entry Grid.Column="1" Grid.Row="0" Margin="5,0,0,20" Placeholder="y1" x:Name="y1Text" FontSize="20" MaxLength="10" TextChanged="Text_TextChanged" Keyboard="Telephone"></Entry>
+        <Entry Grid.Column="0" Grid.Row="1" Margin="5,0,0,20" Placeholder="x2" x:Name="x2Text" FontSize="20" MaxLength="10" TextChanged="Text_TextChanged" Keyboard="Telephone"></Entry>
+        <Entry Grid.Column="1" Grid.Row="1" Margin="5,0,0,20" Placeholder="y2" x:Name="y2Text" FontSize="20" MaxLength="10" TextChanged="Text_TextChanged" Keyboard="Telephone"></Entry>
+        <Entry Grid.Column="0" Grid.Row="2" Margin="5,0,0,20" Placeholder="x3" x:Name="x3Text" FontSize="20" MaxLength="10" TextChanged="Text_TextChanged" Keyboard="Telephone"></Entry>
+        <Entry Grid.Column="1" Grid.Row="2" Margin="5,0,0,20" Placeholder="y3" x:Name="y3Text" FontSize="20" MaxLength="10" TextChanged="Text_TextChanged" Keyboard="Telephone"></Entry>
+        <Button Text="Рассчитать" Grid.Row="3" Grid.ColumnSpan="2" Clicked="Calculate_Clicked"></Button>
+        <Label Grid.Column="0" Text="Периметр треугольника:" x:Name="perimetrOut" Grid.Row="4" Margin="10,0,40,0" FontSize="20" HorizontalTextAlignment="Center"></Label>
+        <Label Grid.Column="1" Text="Площадь треугольника:" x:Name="squareOut" Grid.Row="4" Margin="5,0,0,0" FontSize="20" HorizontalTextAlignment="Center"></Label>
+        <Button Text="Задание №2" Clicked="Transit_Clicked" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,30,0,170"></Button>
+    </Grid>
+</ContentPage>
